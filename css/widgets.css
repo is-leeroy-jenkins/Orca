@@ -51,7 +51,7 @@
     font-size: 25px;
     font-size: max(min(6vw, 25px), 16px);
     line-height: 1.3;
-    color: white;
+    color: #fff;
     text-align: center;
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
@@ -215,7 +215,7 @@
     transition: background-color 0.1s, box-shadow 0.1s;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #fff;
     border: 0;
     border-spacing: 0;
     display: inline-block;
@@ -276,7 +276,7 @@
 }
 
 .custom-radio [type="radio"]:checked+label {
-    color: white;
+    color: #fff;
     background-color: #4287f5;
     border-color: #4287f5;
 }
@@ -339,7 +339,7 @@
     text-decoration: none;
     display: block;
     box-sizing: border-box;
-    color: white;
+    color: #fff;
     height: 28px;
     border: 1px solid #4287f5;
     background-color: #1e1e1e;
@@ -411,7 +411,7 @@
 }
 
 .custom-dropdown>div>a {
-    color: white;
+    color: #fff;
     padding: 5px 8px;
     text-decoration: none;
     text-align: left;
@@ -436,7 +436,7 @@
 
 .custom-dropdown>div>a:hover {
     background-color: #1e1e1e;
-    color: white;
+    color: #fff;
 }
 
 .custom-dropdown>div.force-hide {
@@ -564,7 +564,7 @@
     font-family: 'Roboto';
     border: 1px solid #4287f5;
     background: #1e1e1e none;
-    color: white;
+    color: #fff;
     border-radius: 2px;
     outline: none;
     margin: 1.2em 0 0 1.2em;
@@ -614,7 +614,7 @@
 
 .custom-legend .legend-title:hover {
     background: #1e1e1e;
-    color: white;
+    color: #fff;
 }
 
 .custom-legend .legend-title:focus {
@@ -653,7 +653,7 @@
 .custom-legend .legend-scale {
     border: 0;
     line-height: 1.3;
-    color: white;
+    color: #fff;
     border-radius: 0;
     background: #1e1e1e;
     font-family: 'Roboto';
@@ -695,13 +695,13 @@
 
 .custom-legend .legend-source {
     font-size: 12px;
-    color: white;
+    color: #fff;
     clear: both;
     padding-top: 6px;
 }
 
 .custom-legend a {
-    color: white;
+    color: #fff;
 }
 
 .ui-widget-overlay {

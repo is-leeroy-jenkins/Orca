@@ -32,6 +32,7 @@ a {
 }
 
 img {
+    border: 1px solid #4287f5;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -41,6 +42,7 @@ img {
 }
 
 video {
+    border: 1px solid #4287f5;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -181,7 +183,7 @@ hr {
 
 .menu .menu-items>a:hover,
 .menu .menu-items>div:hover {
-    color: white;
+    color: #fff;
     opacity: 1;
     cursor: pointer;
 }
@@ -225,7 +227,7 @@ hr {
 }
 
 .menu .menu-items .dropdown .dropdown-content a {
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -233,7 +235,7 @@ hr {
 }
 
 .menu .menu-items .dropdown .dropdown-content a:hover {
-    background-color: #013063;
+    background-color: #0243ab;
     color: #fff;
 }
 
@@ -290,7 +292,7 @@ hr {
     font-weight: 300;
     line-height: 1.5;
     overflow-x: auto;
-    background-color: #012154;
+    background-color: #022661;
     display: flex;
 }
 
@@ -314,7 +316,7 @@ hr {
 .banner h3,
 .banner p,
 .banner span {
-    color: white;
+    color: #fff;
 }
 
 .banner .flex-item {
@@ -452,6 +454,7 @@ hr {
 }
 
 .adaptive-image {
+    border: 1px solid #4287f5;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -706,7 +709,7 @@ ol.nested>li:before {
 }
 
 .custom-text-primary a:hover {
-    color: white;
+    color: #fff;
 }
 
 .custom-text-danger,
@@ -864,7 +867,7 @@ ol.nested>li:before {
     left: 10px;
     font-family: 'Roboto';
     font-size: 14px;
-    background-color: #013872;
+    background-color: #0243ab;
     color: #fff;
     text-align: center;
     padding: 0;
@@ -1162,8 +1165,8 @@ ol.nested>li:before {
 
 .custom-survey .custom-radio-group-survey input[type="radio"]:checked+label,
 .custom-survey .custom-radio-group-survey input[type="checkbox"]:checked+label {
-    color: white;
-    background-color: #013872;
+    color: #fff;
+    background-color: #4287f5;
 }
 
 .custom-survey .custom-radio-group-survey input[type="radio"]+label:before,
@@ -1281,7 +1284,7 @@ ol.nested>li:before {
 .custom-survey.answer-mode .custom-radio-group-survey input[type="checkbox"].highlight+label {
     box-shadow: 0px 0px 0px 5px white inset;
     background-color: #282828;
-    color: white;
+    color: #fff;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey {
