@@ -1,5 +1,6 @@
 ﻿/***************************************************************************************************************************************
 * Copyright 2023 Terry D. Eppler
+* Budget Execution US EPA
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files 
 * (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, 
@@ -110,7 +111,7 @@ hr
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     background-color: #323232;
-    box-shadow: 0 0px 4px rgb( 0 0 0 / 32% ), 0 0px 10px rgb( 0 0 0 / 23% );
+    box-shadow: 0 0px 4px rgb( 0, 0, 0 ), 0 0px 10px rgb( 0, 0, 0 );
     min-width: 300px;
     position: relative;
     user-select: none;
@@ -1156,8 +1157,8 @@ ol.nested > li:before
     width: calc( 100% - 5px );
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label
 {
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -1178,14 +1179,14 @@ ol.nested > li:before
     width: 100%;
 }
 
-.custom-survey .custom-radio-group-survey.image-only input[ type="radio" ] + label,
-.custom-survey .custom-radio-group-survey.image-only input[ type="checkbox" ] + label
+.custom-survey .custom-radio-group-survey.image-only input[ type = "radio" ] + label,
+.custom-survey .custom-radio-group-survey.image-only input[ type = "checkbox" ] + label
 {
     padding: 10px;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure
 {
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -1213,10 +1214,10 @@ ol.nested > li:before
     width: 100%;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > img,
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > video,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > img,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > video
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > img,
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > video,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > img,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > video
 {
     background-image: url( ../img/loading.gif );
     background-position: center;
@@ -1229,8 +1230,8 @@ ol.nested > li:before
     width: 100%;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > figcaption,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > figcaption
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > figcaption,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > figcaption
 {
     background-color: transparent;
     bottom: max( min( 2vw, 10px ), 5px );
@@ -1252,8 +1253,8 @@ ol.nested > li:before
     width: auto;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > figcaption.text-only,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > figcaption.text-only
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > figcaption.text-only,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > figcaption.text-only
 {
     background-color: transparent;
     padding: 25px 25px;
@@ -1261,8 +1262,8 @@ ol.nested > li:before
     text-shadow: none;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > div,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > div
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > div,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > div
 {
     background-color: #282828;
     box-sizing: border-box;
@@ -1279,8 +1280,8 @@ ol.nested > li:before
     width: 100%;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label > figure > div > a,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label > figure > div > a
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > div > a,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > div > a
 {
     color: #e3e3e3;
     cursor: alias;
@@ -1289,21 +1290,21 @@ ol.nested > li:before
     text-decoration: underline;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ]:not( :disabled ):hover,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]:not( :disabled ):hover
+.custom-survey .custom-radio-group-survey input[ type = "radio" ]:not( :disabled ):hover,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:not( :disabled ):hover
 {
     background-color: #282828;
     color: #e3e3e3;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ]:disabled,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]:disabled
+.custom-survey .custom-radio-group-survey input[ type = "radio" ]:disabled,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:disabled
 {
     opacity: 0.4;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ],
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]
+.custom-survey .custom-radio-group-survey input[ type = "radio" ],
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]
 {
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -1327,15 +1328,15 @@ ol.nested > li:before
     user-select: none;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ]:checked + label,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]:checked + label
+.custom-survey .custom-radio-group-survey input[ type = "radio" ]:checked + label,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:checked + label
 {
     background-color: #4287f5;
     color: #fff;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label:before,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label:before
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:before,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:before
 {
     background: #282828;
     border: 1px solid #4287f5;
@@ -1348,18 +1349,18 @@ ol.nested > li:before
     z-index: 1;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label:before
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:before
 {
     border-radius: 100%;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label:before
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:before
 {
     border-radius: 2px;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label:after,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label:after
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:after,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:after
 {
     -webkit-transition: all 0.1s ease;
     background: #00bf0a;
@@ -1373,26 +1374,26 @@ ol.nested > li:before
     z-index: 1;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ] + label:after
+.custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:after
 {
     border-radius: 100%;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ] + label:after
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:after
 {
     border-radius: 2px;
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ]:not( :checked ) + label:after,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]:not( :checked ) + label:after
+.custom-survey .custom-radio-group-survey input[ type = "radio" ]:not( :checked ) + label:after,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:not( :checked ) + label:after
 {
     -webkit-transform: scale( 0 );
     opacity: 0;
     transform: scale( 0 );
 }
 
-.custom-survey .custom-radio-group-survey input[ type="radio" ]:checked + label:after,
-.custom-survey .custom-radio-group-survey input[ type="checkbox" ]:checked + label:after
+.custom-survey .custom-radio-group-survey input[ type = "radio" ]:checked + label:after,
+.custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:checked + label:after
 {
     -webkit-transform: scale( 1 );
     opacity: 1;
@@ -1450,21 +1451,21 @@ ol.nested > li:before
     border: 1px solid #4287f5;
 }
 
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="radio" ] + label,
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="checkbox" ] + label
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ] + label,
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ] + label
 {
     border: 3px solid #4287f5;
 }
 
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="radio" ]:not( .highlight ) + label,
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="checkbox" ]:not( .highlight ):checked + label
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ]:not( .highlight ) + label,
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ]:not( .highlight ):checked + label
 {
     background-color: #282828;
     color: #e1e1e1;
 }
 
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="radio" ].highlight + label,
-.custom-survey.answer-mode .custom-radio-group-survey input[ type="checkbox" ].highlight + label
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ].highlight + label,
+.custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ].highlight + label
 {
     background-color: #282828;
     box-shadow: 0px 0px 0px 5px white inset;
