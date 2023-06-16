@@ -22,6 +22,7 @@ resharper_blank_lines_before_block_statements = 0
 resharper_blank_lines_before_multiline_statements = 0
 resharper_csharp_align_multiline_parameter = false
 resharper_csharp_max_line_length = 100
+resharper_csharp_use_indent_from_vs = true
 resharper_csharp_wrap_multiple_type_parameter_constraints_style = chop_always
 resharper_html_alignment_tab_fill_style = optimal_fill
 resharper_html_attribute_style = on_single_line

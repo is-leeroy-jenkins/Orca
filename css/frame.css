@@ -1,19 +1,43 @@
-﻿/***************************************************************************************************************************************
-* Copyright 2023 Terry D. Eppler
-* Budget Execution US EPA
+﻿/**************************************************************************************************
+*     File Name:               frame.css
+*     Assembly:                Budget Execution
+*     Author:                  Terry D. Eppler
+*     Created:                 03-24-2023
+* 
+*     Last Modified By:        Terry D. Eppler
+*     Last Modified On:        05-31-2023
 *
-* Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files 
-* (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, 
-* publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
-* subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies 
-* or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
-* THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-* COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-* ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*
-***************************************************************************************************************************************/
+* <copyright file="frame.css" company="Terry Eppler">
+*    This is a Federal Budget, Finance, and Accounting application for the
+*    US Environmental Protection Agency (US EPA).
+*    Copyright ©  2023  Terry Eppler
+* 
+*    Permission is hereby granted, free of charge, to any person obtaining a copy
+*    of this software and associated documentation files (the “Software”),
+*    to deal in the Software without restriction,
+*    including without limitation the rights to use,
+*    copy, modify, merge, publish, distribute, sublicense,
+*    and/or sell copies of the Software,
+*    and to permit persons to whom the Software is furnished to do so,
+*    subject to the following conditions:
+* 
+*    The above copyright notice and this permission notice shall be included in all
+*    copies or substantial portions of the Software.
+* 
+*    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+*    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+*    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+*    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+*    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+*    DEALINGS IN THE SOFTWARE.
+* 
+*    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
+* </copyright>
+* <summary>
+*   frame.css
+* </summary>
+**************************************************************************************************/
 html,
 body
 {
@@ -48,7 +72,7 @@ img
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    border: 1px solid #4287f5;
+    border: 1px solid transparent;
     user-select: none;
 }
 
@@ -111,7 +135,7 @@ hr
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     background-color: #323232;
-    box-shadow: 0 0px 4px rgb( 0, 0, 0 ), 0 0px 10px rgb( 0, 0, 0 );
+    box-shadow: 0 0 4px rgb( 0, 0, 0 ), 0 0 10px rgb( 0, 0, 0 );
     min-width: 300px;
     position: relative;
     user-select: none;
@@ -129,7 +153,7 @@ hr
 .menu .menu-table
 {
     margin: 0;
-    padding: 0px 10px;
+    padding: 0 10px;
     width: 100%;
 }
 
@@ -249,11 +273,12 @@ hr
 
 .menu .menu-items .dropdown .dropdown-content
 {
-    background-color: #282828;
+    background-color: #616161;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     border-top: 3px solid #4287f5;
-    box-shadow: 0px 8px 16px 0px rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 16px 0 #000000;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.2 );
     display: none;
     min-width: 100px;
     position: absolute;
@@ -331,7 +356,7 @@ hr
 
 .banner
 {
-    background-color: #022661;
+    background-color: #00294D;
     display: flex;
     font-family: 'Roboto';
     font-size: 16px;
@@ -529,7 +554,7 @@ hr
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #4287f5;
+    border: 1px transparent;
 }
 
 .image-wrap-text
@@ -1151,7 +1176,8 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey label > img
 {
     border-radius: 51%;
-    box-shadow: 0 0px 4px rgba( 0, 0, 0, 0.32 ), 0 0px 10px rgba( 0, 0, 0, 0.23 );
+    box-shadow: 0 0 4px #000000, 0 0 10px #000000;
+    box-shadow: 0 0 4px rgba( 0, 0, 0, 0.32 ), 0 0 10px rgba( 0, 0, 0, 0.23 );
     margin-bottom: 10px;
     margin-top: 5px;
     width: calc( 100% - 5px );
@@ -1468,7 +1494,7 @@ ol.nested > li:before
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ].highlight + label
 {
     background-color: #282828;
-    box-shadow: 0px 0px 0px 5px white inset;
+    box-shadow: 0 0 0 5px white inset;
     color: #fff;
 }
 
@@ -1633,6 +1659,7 @@ screen and ( max-width: 750px )
     .menu .menu-items > a,
     .menu .menu-items > div
     {
+        border-top: 1px solid #ffffff;
         border-top: 1px solid rgba( 255, 255, 255, 0.5 );
         display: block;
         padding: 10px 0;
@@ -1657,7 +1684,9 @@ screen and ( max-width: 750px )
 
     .menu .menu-items .dropdown .dropdown-content a
     {
+        border-top: 1px solid #ffffff;
         border-top: 1px solid rgba( 255, 255, 255, 0.5 );
+        color: #ffffff;
         color: rgba( 255, 255, 255, 0.8 );
         display: block;
         padding: 10px 20px;
