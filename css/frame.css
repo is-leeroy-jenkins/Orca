@@ -83,13 +83,13 @@ video
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    border: 1px solid #4287f5;
+    border: 1px solid #7EAFFC;
     user-select: none;
 }
 
 h2
 {
-    color: #e3e3e3;
+    color: #fff;
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: bold;
@@ -99,7 +99,7 @@ h2
 
 h3
 {
-    color: #e3e3e3;
+    color: #fff;
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: bold;
@@ -336,7 +336,7 @@ hr
 .content ul a,
 .content ol a
 {
-    color: #4287f5;
+    color: #7EAFFC;
     text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ hr
 
 .banner .banner-table a
 {
-    color: #a3cfff;
+    color: #7EAFFC;
     text-decoration: none;
 }
 
@@ -531,6 +531,7 @@ hr
     margin: 15px 0;
     user-select: none;
     width: 100%;
+    border: 1px solid #7EAFFC;
 }
 
 .image.center
@@ -541,6 +542,7 @@ hr
 .image img,
 .image video
 {
+    border: 1px solid #7EAFFC;
     border-radius: 2px;
     box-sizing: border-box;
     display: table-cell;
@@ -554,7 +556,7 @@ hr
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px transparent;
+    border: 1px solid #7EAFFC;
 }
 
 .image-wrap-text
@@ -789,6 +791,7 @@ ol.nested > li:before
 
 .iframe-container
 {
+    border: 1px solid #7EAFFC;
     bottom: 0;
     height: auto;
     left: 0;
@@ -807,7 +810,7 @@ ol.nested > li:before
 
 .iframe-in-body
 {
-    border: 1px solid #4287f5;
+    border: 1px solid #7EAFFC;
     height: 400px;
     margin: 15px 0;
     width: 100%;
@@ -904,6 +907,7 @@ ol.nested > li:before
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px 30px;
+    border-color: #7EAFFC;
     border-radius: 2px;
     min-height: 50px;
     width: 100%;
@@ -960,7 +964,7 @@ ol.nested > li:before
 {
     -moz-box-shadow: inset 0 0 4px 1px #6d6d6d;
     -webkit-box-shadow: inset 0 0 4px 1px #6d6d6d;
-    border: 5px solid #4287f5;
+    border: 5px solid #7EAFFC;
     box-shadow: inset 0 0 4px 1px #6d6d6d;
 }
 
@@ -1063,7 +1067,7 @@ ol.nested > li:before
 
 .custom-table
 {
-    border: 1px solid #4287f5;
+    border: 1px solid #7EAFFC;
     border-collapse: collapse;
     border-spacing: 0;
     display: block;
@@ -1075,13 +1079,13 @@ ol.nested > li:before
 
 .custom-table thead
 {
-    border-bottom: 1px solid #4287f5;
+    border-bottom: 1px solid #7EAFFC;
     text-align: left;
 }
 
 .custom-table tfoot
 {
-    border-top: 1px solid #4287f5;
+    border-top: 1px solid #7EAFFC;
 }
 
 .custom-table tr.bg-color-gray
