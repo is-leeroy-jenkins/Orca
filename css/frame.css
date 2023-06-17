@@ -83,7 +83,7 @@ video
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
     user-select: none;
 }
 
@@ -297,7 +297,7 @@ hr
 
 .menu .menu-items .dropdown .dropdown-content a:hover
 {
-    background-color: #0243ab;
+    background-color: #01368a;
     color: #fff;
 }
 
@@ -336,7 +336,7 @@ hr
 .content ul a,
 .content ol a
 {
-    color: #7EAFFC;
+    color: #0078d4;
     text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ hr
 
 .banner .banner-table a
 {
-    color: #7EAFFC;
+    color: #0078d4;
     text-decoration: none;
 }
 
@@ -531,7 +531,7 @@ hr
     margin: 15px 0;
     user-select: none;
     width: 100%;
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
 }
 
 .image.center
@@ -542,7 +542,7 @@ hr
 .image img,
 .image video
 {
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
     border-radius: 2px;
     box-sizing: border-box;
     display: table-cell;
@@ -556,7 +556,7 @@ hr
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
 }
 
 .image-wrap-text
@@ -791,7 +791,7 @@ ol.nested > li:before
 
 .iframe-container
 {
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
     bottom: 0;
     height: auto;
     left: 0;
@@ -810,7 +810,7 @@ ol.nested > li:before
 
 .iframe-in-body
 {
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
     height: 400px;
     margin: 15px 0;
     width: 100%;
@@ -907,7 +907,7 @@ ol.nested > li:before
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px 30px;
-    border-color: #7EAFFC;
+    border-color: #0078d4;
     border-radius: 2px;
     min-height: 50px;
     width: 100%;
@@ -964,7 +964,7 @@ ol.nested > li:before
 {
     -moz-box-shadow: inset 0 0 4px 1px #6d6d6d;
     -webkit-box-shadow: inset 0 0 4px 1px #6d6d6d;
-    border: 5px solid #7EAFFC;
+    border: 5px solid #0078d4;
     box-shadow: inset 0 0 4px 1px #6d6d6d;
 }
 
@@ -1067,7 +1067,7 @@ ol.nested > li:before
 
 .custom-table
 {
-    border: 1px solid #7EAFFC;
+    border: 1px solid #0078d4;
     border-collapse: collapse;
     border-spacing: 0;
     display: block;
@@ -1079,35 +1079,35 @@ ol.nested > li:before
 
 .custom-table thead
 {
-    border-bottom: 1px solid #7EAFFC;
+    border-bottom: 1px solid #0078d4;
     text-align: left;
 }
 
 .custom-table tfoot
 {
-    border-top: 1px solid #7EAFFC;
+    border-top: 1px solid #0078d4;
 }
 
 .custom-table tr.bg-color-gray
 {
-    background-color: #141414;
+    background-color: #4C4A4A;
 }
 
 .custom-table tr.bg-color-light-gray
 {
-    background-color: #272626;
+    background-color: #333232;
 }
 
 .custom-table td,
 .custom-table th
 {
-    padding: 5px 10px;
+    padding: 5px 10px; 
 }
 
 .custom-survey p.custom-answer-survey
 {
     background: #333232;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     border-radius: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -1132,7 +1132,7 @@ ol.nested > li:before
 .custom-survey textarea.custom-textbox-survey
 {
     background: #413f3f;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;;
     border-radius: 0;
     box-sizing: border-box;
     font-family: 'Roboto';

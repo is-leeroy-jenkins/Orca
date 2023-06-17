@@ -65,7 +65,7 @@
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     background-color: #afa6a6;
-    border: 1px solid #4287f5;
+    border: 1px solid #0078d4;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
@@ -85,14 +85,14 @@
 
 .custom-button:not( :disabled ):hover
 {
-    background-color:  #005cbf;
-    border-color: #7EAFFC;
+    background-color:   #01368a;
+    border-color: #0078d4;
 }
 
 .custom-button:not( :disabled ):active
 {
     background-color: #afa6a6;
-    border-color: #4287f5;
+    border-color: #0078d4;
 }
 
 .custom-button:disabled
@@ -110,14 +110,14 @@
 
 .custom-button-primary:not( :disabled ):hover
 {
-    background-color:  #005cbf;
-    border-color: #7EAFFC;
+    background-color:   #01368a;
+    border-color: #0078d4;
 }
 
 .custom-button-primary:not( :disabled ):active
 {
     background-color:  #afa6a6;
-    border-color: #4287f5;
+    border-color: #0078d4;
 }
 
 .custom-button-danger
@@ -146,8 +146,8 @@
 
 .custom-button-info:not( :disabled ):hover
 {
-    background-color:  #005cbf;
-    border-color: #7EAFFC;
+    background-color:   #01368a;
+    border-color: #0078d4;
 }
 
 .custom-button-info:not( :disabled ):active
@@ -236,7 +236,7 @@ input.custom-textbox,
 textarea.custom-textbox
 {
     background: #616161;
-    border: 1px solid #4287f5;
+    border: 1px solid #0078d4;
     border-radius: 2px;
     box-sizing: border-box;
     color: #fff;
