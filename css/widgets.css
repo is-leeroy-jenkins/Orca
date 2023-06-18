@@ -346,13 +346,13 @@
 {
     background-color: #4287f5;
     border-color: #4287f5;
-    color: #fff;
+    color:  #D6D2D2;
 }
 
 .custom-radio [ type = "radio" ] + label:before
 {
     background:  #3E3C3C;
-    border: 1px solid #4287f5;
+    border: 1px solid #4287F5;
     border-radius: 100%;
     content: '';
     height: 12px;
@@ -365,7 +365,7 @@
 .custom-radio [ type = "radio" ] + label:after
 {
     -webkit-transition: all 0.1s ease;
-    background: #005cbf;
+    background: #00ff1e;
     border-radius: 100%;
     content: '';
     height: 8px;
@@ -392,6 +392,9 @@
 
 .custom-dropdown
 {
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
+    border: 1px solid #4287f5;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -405,12 +408,12 @@
 
 .custom-dropdown > a
 {
-    background-color:  #5A5757;
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
     border: 1px solid #4287f5;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
-    color:  #D6D2D2;
     cursor: pointer;
     display: block;
     height: 28px;
@@ -425,6 +428,9 @@
 {
     height: 37px;
     padding: 5px 31px 5px 10px;
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
+    border: 1px solid #4287f5;
 }
 
 .custom-dropdown > a > span
@@ -436,16 +442,22 @@
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
 }
 
 .custom-dropdown.large > a > span
 {
     font-size: 16px !important;
     line-height: 25px;
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
 }
 
 .custom-dropdown > a:after
 {
+    color:  #D6D2D2;
+    background-color:  #3E3D3D;
     border: 4px solid #4287f5;
     border-top-color: #4287f5;
     content: "";
@@ -458,6 +470,8 @@
 
 .custom-dropdown.large > a:after
 {
+    color:  #D6D2D2;
+    background-color: #3E3D3D;
     border: 5px solid #4287f5;
     border-top-color: #4287f5;
     right: 13px;
@@ -466,7 +480,8 @@
 
 .custom-dropdown > div
 {
-    background-color: #494646;
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
     border: 1px solid #4287f5;
     border-radius: 2px;
     box-shadow: 0 4px 8px #000000;
@@ -501,6 +516,7 @@
     border-top: 0;
     box-sizing: border-box;
     color:  #D6D2D2;
+    background-color:   #3E3D3D;
     display: block;
     font-size: 14px !important;
     height: 26px;
@@ -514,6 +530,8 @@
 
 .custom-dropdown.large > div > a
 {
+    color:  #D6D2D2;
+    background-color:   #3E3D3D;
     font-size: 16px !important;
     height: 35px;
     line-height: 25px;
@@ -540,7 +558,7 @@
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     color: #D6D2D2;
-    background-color:  #414141;
+    background-color:   #3E3D3D;
     background-image: none;
     border-radius: 2px;
     font-family: 'Roboto';
@@ -555,7 +573,7 @@
 {
     border-color: #0078d4;
     color: #D6D2D2;
-    background-color:  #414141;
+    background-color:   #3E3D3D;
     background-image: none;
     padding: 1.6em 1.8em 1.5em 1.8em;
 }
@@ -591,7 +609,6 @@
     border: 0;
     border-bottom: 1px solid #4287f5;
     border-radius: 0;
-    color: #D6D2D2;
     padding: 1.2em 1.8em 1.2em 1.8em;
 }
 
