@@ -41,7 +41,7 @@
 html,
 body
 {
-    background-color: #141414;
+    background-color: #1e1d1d;
     color: #fff;
     font-family: 'Roboto';
     left: 0;
@@ -273,7 +273,7 @@ hr
 
 .menu .menu-items .dropdown .dropdown-content
 {
-    background-color: #616161;
+    background-color:  #645D5D;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     border-top: 3px solid #4287f5;
@@ -297,7 +297,7 @@ hr
 
 .menu .menu-items .dropdown .dropdown-content a:hover
 {
-    background-color: #01368a;
+    background-color: #014075;
     color: #fff;
 }
 
@@ -356,7 +356,7 @@ hr
 
 .banner
 {
-    background-color: #00294D;
+    background-color:  #0C2336;
     display: flex;
     font-family: 'Roboto';
     font-size: 16px;
@@ -376,7 +376,7 @@ hr
 
 .banner .banner-table a
 {
-    color: #0078d4;
+    color: #68A0FA;
     text-decoration: none;
 }
 
@@ -431,6 +431,11 @@ hr
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.flex-row .flex-item a
+{
+    color: #68A0FA;
 }
 
 .flex-row-center
@@ -844,7 +849,7 @@ ol.nested > li:before
 .custom-text-info p,
 .custom-text-info a
 {
-    color: #fff;
+    color: #D6D2D2;
 }
 
 .custom-text-info a:hover
@@ -856,7 +861,7 @@ ol.nested > li:before
 .custom-text-primary p,
 .custom-text-primary a
 {
-    color: #fff;
+    color: #D6D2D2;
 }
 
 .custom-text-primary a:hover
@@ -892,7 +897,7 @@ ol.nested > li:before
 .gallery > a.flex-column,
 .gallery > div.flex-column
 {
-    color: #fff;
+    color: #D6D2D2;
     cursor: default;
     padding: 15px;
     text-decoration: none;
@@ -946,7 +951,7 @@ ol.nested > li:before
     border: 5px solid transparent;
     box-sizing: border-box;
     break-inside: avoid;
-    color: #fff;
+    color: #D6D2D2;
     cursor: default;
     display: flex;
     flex-direction: column;
@@ -987,7 +992,7 @@ ol.nested > li:before
     background-color: transparent;
     bottom: max( min( 2vw, 20px ), 15px );
     box-sizing: border-box;
-    color: #fff;
+    color:  #D6D2D2;
     display: block;
     font-family: 'Roboto';
     font-size: 25px;
@@ -1014,7 +1019,7 @@ ol.nested > li:before
 
 .masonry figure > figcaption.text-bottom
 {
-    color: #fff;
+    color:  #D6D2D2;
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: normal;
@@ -1027,7 +1032,7 @@ ol.nested > li:before
 {
     background-color: #0243ab;
     box-sizing: border-box;
-    color: #fff;
+    color: #D6D2D2;
     display: block;
     font-family: 'Roboto';
     font-size: 14px;
@@ -1044,7 +1049,7 @@ ol.nested > li:before
 
 .masonry figure > div > a
 {
-    color: #fff;
+    color: #D6D2D2;
     cursor: alias;
     font-family: 'Roboto';
     font-size: 14px;
@@ -1106,7 +1111,7 @@ ol.nested > li:before
 
 .custom-survey p.custom-answer-survey
 {
-    background: #333232;
+    background-color:  #343333;
     border: 1px solid  #0078d4;
     border-radius: 0;
     box-sizing: border-box;
@@ -1131,7 +1136,7 @@ ol.nested > li:before
 .custom-survey input.custom-textbox-survey,
 .custom-survey textarea.custom-textbox-survey
 {
-    background: #413f3f;
+    background-color:  #343333;
     border: 1px solid  #0078d4;;
     border-radius: 0;
     box-sizing: border-box;
@@ -1151,7 +1156,7 @@ ol.nested > li:before
 .custom-survey input[ readonly ].custom-textbox-survey,
 .custom-survey textarea[ readonly ].custom-textbox-survey
 {
-    background: #282828;
+    background-color: #343333;
     cursor: default;
 }
 
@@ -1195,7 +1200,7 @@ ol.nested > li:before
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    background-color: #282828;
+    background-color:  #343333;
     border: 0;
     color: #e1e1e1;
     cursor: pointer;
@@ -1225,7 +1230,7 @@ ol.nested > li:before
     -webkit-user-select: none;
     align-content: stretch;
     align-items: stretch;
-    background-color: #282828;
+    background-color:#343333;
     border: 0;
     box-sizing: border-box;
     break-inside: avoid;
@@ -1295,7 +1300,7 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > div,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > div
 {
-    background-color: #282828;
+    background-color: #343333;
     box-sizing: border-box;
     color: #e3e3e3;
     display: block;
@@ -1323,7 +1328,7 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ]:not( :disabled ):hover,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:not( :disabled ):hover
 {
-    background-color: #282828;
+    background-color:#343333;
     color: #e3e3e3;
 }
 
@@ -1341,7 +1346,7 @@ ol.nested > li:before
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    background-color: #282828;
+    background-color:#343333;
     border: 0;
     border-spacing: 0;
     box-shadow: none;
@@ -1368,7 +1373,7 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:before,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:before
 {
-    background: #282828;
+    background:#343333;
     border: 1px solid #4287f5;
     content: '';
     height: 20px;
@@ -1432,7 +1437,7 @@ ol.nested > li:before
 
 .custom-survey
 {
-    background-color: #282828;
+    background-color:  #343333;
     border: 1px solid #4287f5;
     border-radius: 0;
     display: flex;
@@ -1443,7 +1448,7 @@ ol.nested > li:before
 
 .custom-survey .text
 {
-    color: #e1e1e1;
+    color: #fff;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -1455,29 +1460,30 @@ ol.nested > li:before
 
 .custom-survey .custom-textbox-survey
 {
+    background-color: #5A5454;
     color: #e1e1e1;
 }
 
 .custom-survey textarea.custom-textbox-survey::-webkit-input-placeholder
 {
     /* Edge */
-    color: #a8a8a8;
+    color:  #343333;
 }
 
 .custom-survey textarea.custom-textbox-survey:-ms-input-placeholder
 {
     /* Internet Explorer */
-    color: #a8a8a8;
+    color:   #343333;
 }
 
 .custom-survey textarea.custom-textbox-survey::placeholder
 {
-    color: #a8a8a8;
+    color:   #343333;
 }
 
 .custom-survey.answer-mode
 {
-    background-color: #282828;
+    background-color:  #343333;
     border: 1px solid #4287f5;
 }
 
@@ -1490,26 +1496,26 @@ ol.nested > li:before
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ]:not( .highlight ) + label,
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ]:not( .highlight ):checked + label
 {
-    background-color: #282828;
+    background-color:  #343333;
     color: #e1e1e1;
 }
 
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ].highlight + label,
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ].highlight + label
 {
-    background-color: #282828;
+    background-color: #343333;
     box-shadow: 0 0 0 5px white inset;
     color: #fff;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey
 {
-    color: #282828;
+    color:  #343333;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey:disabled
 {
-    background: #282828;
+    background:  #343333;
 }
 
 .no-top-margin

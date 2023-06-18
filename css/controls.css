@@ -38,7 +38,8 @@
 *   controls.css
 * </summary>
 **************************************************************************************************/
-  .custom-image-button
+
+.custom-image-button
 {
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -47,7 +48,7 @@
     -webkit-user-select: none;
     align-content: stretch;
     align-items: stretch;
-    background-color: #afa6a6;
+    background-color: #A09898;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    background-color: #afa6a6;
+    background-color: #A09898;
     border: 1px solid #0078d4;
     border-radius: 2px;
     box-shadow: none;
@@ -83,40 +84,51 @@
     user-select: none;
 }
 
+.custom-button a span:not( :disabled ):active
+{
+    color: #014075;
+}
+
+.custom-button a span:not( :disabled ):hover
+{
+    color: #fff;
+}
+
 .custom-button:not( :disabled ):hover
 {
-    background-color:   #01368a;
-    border-color: #0078d4;
+    background-color:  #014075;
+    border-color:  #168EE9;
 }
 
 .custom-button:not( :disabled ):active
 {
-    background-color: #afa6a6;
+    background-color: #A09898;
     border-color: #0078d4;
 }
 
 .custom-button:disabled
 {
-    background-color: #BDBDBD;
+    background-color:  #A09898;
     cursor: default;
     opacity: 0.4;
 }
 
 .custom-button-primary
 {
-    background-color: #afa6a6;
-    border-color:  #afa6a6;
+    background-color: #A09898;
+    border-color:  #0078d4;
 }
 
 .custom-button-primary:not( :disabled ):hover
 {
-    background-color:   #01368a;
-    border-color: #0078d4;
+    color: #fff;
+    background-color:  #014075;
+    border-color: #168EE9;
 }
 
 .custom-button-primary:not( :disabled ):active
 {
-    background-color:  #afa6a6;
+    background-color:  #A09898;
     border-color: #0078d4;
 }
 
@@ -140,20 +152,20 @@
 
 .custom-button-info
 {
-    background-color: #afa6a6;
-    border-color:  #afa6a6;
+    background-color: #BBB7B7;
+    border-color:  #0078d4;
 }
 
 .custom-button-info:not( :disabled ):hover
 {
-    background-color:   #01368a;
-    border-color: #0078d4;
+    background-color: #014075;
+    border-color: #168EE9;
 }
 
 .custom-button-info:not( :disabled ):active
 {
-    background-color: #afa6a6;
-    border-color: #afa6a6;
+    background-color: #BBB7B7;
+    border-color: #168EE9;
 }
 
 .custom-button-flat
@@ -165,8 +177,8 @@
     -webkit-user-select: none;
     align-content: center;
     align-items: center;
-    background-color: #afa6a6;
-    border: 1px solid #afa6a6;
+    background-color: #BBB7B7;
+    border: 1px solid #0078d4;
     border-radius: 48px;
     box-shadow: none;
     box-sizing: border-box;
@@ -185,6 +197,12 @@
     text-decoration: none;
     transition: background-color 0.1s, box-shadow 0.1s, border 0.1s;
     user-select: none;
+}
+
+.custom-button-flat:not( :disabled ):hover
+{
+    background-color:  #014075;
+    border-color:  #168EE9;
 }
 
 .custom-button-flat.large
@@ -227,6 +245,7 @@
     width: 24px;
 }
 
+
 .custom-button-flat span
 {
     margin-left: 6px;
@@ -235,7 +254,7 @@
 input.custom-textbox,
 textarea.custom-textbox
 {
-    background: #616161;
+    background:  #A09898;
     border: 1px solid #0078d4;
     border-radius: 2px;
     box-sizing: border-box;
@@ -262,7 +281,7 @@ textarea.custom-textbox
 input[ readonly ].custom-textbox,
 textarea[ readonly ].custom-textbox
 {
-    background: #7A7777;
+    background: #A09898;
     cursor: default;
 }
 
