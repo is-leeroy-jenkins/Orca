@@ -35,7 +35,13 @@
 *    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 * </copyright>
 * <summary>
-*   widgets.css
+*   widgets.css main properties
+*   
+*   background-color: #212020;
+*   image background color - #373737;
+*   color: #D6D2D2;
+*   border: 1px solid #0078d4;
+*
 * </summary>
 **************************************************************************************************/
 .painting-frame
@@ -179,7 +185,7 @@
 .custom-tab .custom-tab-menu
 {
     background-color:   #645D5D;
-    border: 1px solid #4287f5;
+    border: 1px solid #0078d4;
     border-bottom: none;
     overflow: hidden;
     width: fit-content;
@@ -202,19 +208,19 @@
 .custom-tab .custom-tab-menu-item:hover
 {
     background-color: #014075;
-    border-color: #4287f5;
+    border-color: #5894F4;
 }
 
 .custom-tab .custom-tab-menu-item.active
 {
-    background-color: #1e1e1e;
+    background-color: #202020;
 }
 
 .custom-tab .custom-tab-content
 {
     align-content: stretch;
     align-items: stretch;
-    border: 1px solid #4287f5;
+    border: 1px solid #0078d4;
     box-sizing: border-box;
     display: none;
     flex-direction: column;
@@ -246,7 +252,7 @@
 
 .custom-tab .graph-title.add-bottom-border
 {
-    border-bottom: 1px solid #4287f5;
+    border-bottom: 1px solid  #0078d4;
 }
 
 .custom-tab .image:first-child,
@@ -323,7 +329,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     border-radius: 2px;
     color:  #D6D2D2;
     cursor: pointer;
@@ -344,15 +350,15 @@
 
 .custom-radio [ type = "radio" ]:checked + label
 {
-    background-color: #4287f5;
-    border-color: #4287f5;
+    background-color: #014075;
+    border-color:  #0078d4;
     color:  #D6D2D2;
 }
 
 .custom-radio [ type = "radio" ] + label:before
 {
-    background:  #3E3C3C;
-    border: 1px solid #4287F5;
+    background-color:   #3E3D3D;
+    border: 1px solid #0078d4;
     border-radius: 100%;
     content: '';
     height: 12px;
@@ -394,7 +400,7 @@
 {
     color:  #D6D2D2;
     background-color:   #3E3D3D;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -410,7 +416,7 @@
 {
     color:  #D6D2D2;
     background-color:   #3E3D3D;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
@@ -430,7 +436,7 @@
     padding: 5px 31px 5px 10px;
     color:  #D6D2D2;
     background-color:   #3E3D3D;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
 }
 
 .custom-dropdown > a > span
@@ -458,8 +464,8 @@
 {
     color:  #D6D2D2;
     background-color:  #3E3D3D;
-    border: 4px solid #4287f5;
-    border-top-color: #4287f5;
+    border: 4px solid  #0078d4;
+    border-top-color:  #0078d4;
     content: "";
     height: 0;
     position: absolute;
@@ -472,8 +478,8 @@
 {
     color:  #D6D2D2;
     background-color: #3E3D3D;
-    border: 5px solid #4287f5;
-    border-top-color: #4287f5;
+    border: 5px solid  #0078d4;
+    border-top-color:  #0078d4;
     right: 13px;
     top: 17px;
 }
@@ -482,7 +488,7 @@
 {
     color:  #D6D2D2;
     background-color:   #3E3D3D;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     border-radius: 2px;
     box-shadow: 0 4px 8px #000000;
     box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.15 );
@@ -507,6 +513,9 @@
 .custom-dropdown > div:hover
 {
     display: block;
+    background-color: #014075;
+    border: 1px solid  #2690E1;
+    color: #fff;
 }
 
 .custom-dropdown > div > a
@@ -516,7 +525,7 @@
     border-top: 0;
     box-sizing: border-box;
     color:  #D6D2D2;
-    background-color:   #3E3D3D;
+    background-color:   #414141;
     display: block;
     font-size: 14px !important;
     height: 26px;
@@ -531,7 +540,7 @@
 .custom-dropdown.large > div > a
 {
     color:  #D6D2D2;
-    background-color:   #3E3D3D;
+    background-color:   #414141;
     font-size: 16px !important;
     height: 35px;
     line-height: 25px;
@@ -541,7 +550,7 @@
 .custom-dropdown > div > a:hover
 {
     background-color: #014075;
-    border: 1px solid #4287f5;
+    border: 1px solid  #2690E1;
     color: #fff;
 }
 
@@ -558,7 +567,7 @@
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     color: #D6D2D2;
-    background-color:   #3E3D3D;
+    background-color:   #414141;
     background-image: none;
     border-radius: 2px;
     font-family: 'Roboto';
@@ -573,7 +582,7 @@
 {
     border-color: #0078d4;
     color: #D6D2D2;
-    background-color:   #3E3D3D;
+    background-color:  #616161;
     background-image: none;
     padding: 1.6em 1.8em 1.5em 1.8em;
 }
@@ -604,10 +613,10 @@
 .custom-dialog-flat .ui-dialog-titlebar
 {
     color: #D6D2D2;
-    background-color:  #2B2B2B;
+    background-color:  #393838;
     background-image: none;
     border: 0;
-    border-bottom: 1px solid #4287f5;
+    border-bottom: 1px solid #616161;
     border-radius: 0;
     padding: 1.2em 1.8em 1.2em 1.8em;
 }
@@ -624,12 +633,12 @@
 .custom-dialog-flat .ui-dialog-titlebar .ui-dialog-titlebar-close
 {
     color: #D6D2D2;
-    background-color:  #2B2B2B;
+    background-color:  #393838;
     border: 0;
     margin: 0;
     padding: 0;
     position: absolute;
-    color:  #4287f5;
+    color:   #0078d4;
     right: 1.5em;
     text-indent: 0;
     top: 1.3em;
@@ -653,7 +662,7 @@
 .custom-dialog-flat .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-default
 {
     color: #D6D2D2;
-    background-color:  #2B2B2B;
+    background-color:#616161;
     border: none;
     height: auto;
 }
@@ -669,13 +678,14 @@
     vertical-align: -0.15em;
 }
 
+
 .custom-dialog-flat .ui-dialog-buttonpane
 {
     color: #D6D2D2;
-    background-color:  #2B2B2B;
-    border-color: #0078d4;
-    border-top: 1px solid #0078d4;
-    border-width: 0;
+    background-color:   #393838;
+    border-color: #414141;
+    border-top: 1px solid #414141;
+    border-width: 1px;
     margin: 0;
     padding: 0 1.8em 1.2em 1.8em
 }
@@ -695,10 +705,10 @@
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button
 {
-    background:  #414141;
-    border: 1px solid #4287f5;
+    background:#616161;
+    border-color:#616161;
     border-radius: 2px;
-    color: #fff;
+    color:  #D6D2D2;
     font-family: 'Roboto';
     margin: 1.2em 0 0 1.2em;
     outline: none;
@@ -717,8 +727,7 @@
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.ui-action-button
 {
-    background-color: #414141;
-    border: 1px solid #4287f5;
+    background-color: #616161;
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.full-width
@@ -739,9 +748,9 @@
 
 .custom-legend .legend-title
 {
-    background: #414141;
+    background: #3E3D3D;
     border: 0;
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     border-radius: 0;
     color: #fff;
     font-family: 'Roboto';
@@ -798,12 +807,12 @@
 
 .custom-legend .legend-scale
 {
-    background: #414141;
+    background: #3E3D3D;
     border: 0;
-    border-bottom: 1px solid #4287f5;
-    border-left: 1px solid #4287f5;
+    border-bottom: 1px solid  #0078d4;
+    border-left: 1px solid  #0078d4;
     border-radius: 0;
-    border-right: 1px solid #4287f5;
+    border-right: 1px solid  #0078d4;
     border-top: 0;
     color: #fff;
     font-family: 'Roboto';
@@ -835,7 +844,7 @@
 
 .custom-legend ul.legend-labels li span
 {
-    border: 1px solid #4287f5;
+    border: 1px solid  #0078d4;
     display: block;
     float: left;
     height: 16px;
@@ -859,7 +868,7 @@
 
 .ui-widget-overlay
 {
-    background-color: #1e1e1e;
+    background-color: #212020;
     background-image: none;
     opacity: 0.7;
 }

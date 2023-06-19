@@ -35,14 +35,20 @@
 *    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 * </copyright>
 * <summary>
-*   frame.css
+*   frame.css main properties
+*   
+*   background-color: #212020;
+*   image background color - #373737;
+*   color: #D6D2D2;
+*   border: 1px solid #0078d4;
+*
 * </summary>
 **************************************************************************************************/
 html,
 body
 {
-    background-color: #1e1d1d;
-    color: #fff;
+    background-color: #212020;
+    color: #D6D2D2;
     font-family: 'Roboto';
     left: 0;
     margin: 0;
@@ -89,7 +95,7 @@ video
 
 h2
 {
-    color: #fff;
+    color: #D6D2D2;
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: bold;
@@ -99,7 +105,7 @@ h2
 
 h3
 {
-    color: #fff;
+    color: #D6D2D2;
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: bold;
@@ -121,7 +127,7 @@ li ul
 
 hr
 {
-    background: #272727;
+    background-color: #212020;
     border: 0;
     height: 1px;
     margin: 0 0 10px 0;
@@ -171,7 +177,7 @@ hr
 
 .menu .logo a
 {
-    color: #e3e3e3;
+    color: #D6D2D2;
     flex: 1 auto;
     font-family: 'Roboto';
     font-size: 30px;
@@ -1511,6 +1517,7 @@ ol.nested > li:before
 .custom-survey.answer-mode .custom-textbox-survey
 {
     color:  #343333;
+    background: #e1e1e1;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey:disabled
