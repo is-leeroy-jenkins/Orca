@@ -1,6 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+﻿
+using Microsoft.AspNetCore.Builder;
 
-app.MapGet("/", () => "Hello World!");
+internal class Program
+{
+    public static void Main( string[] args )
+    {
+        var builder = WebApplication.CreateBuilder(args);
+        var app = builder.Build();
 
-app.Run();
+        app.MapGet("/", () => "index.html");
+
+        app.Run();
+    }
+}
