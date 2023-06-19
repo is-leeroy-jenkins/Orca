@@ -1,41 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.6.33712.159
+VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BudgetWeb", ".", "{5F14D220-6AD7-4EAC-829D-5A4AE379A633}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_60218"
-		Debug.AspNetCompiler.PhysicalPath = "..\BudgetWeb\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60218\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_60218"
-		Release.AspNetCompiler.PhysicalPath = "..\BudgetWeb\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60218\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60218"
-		SlnRelativePath = "..\BudgetWeb\"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetWeb", "BudgetWeb.csproj", "{D80A7026-B4EB-4701-A708-6C09C7D9071E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F14D220-6AD7-4EAC-829D-5A4AE379A633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F14D220-6AD7-4EAC-829D-5A4AE379A633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80A7026-B4EB-4701-A708-6C09C7D9071E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80A7026-B4EB-4701-A708-6C09C7D9071E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80A7026-B4EB-4701-A708-6C09C7D9071E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80A7026-B4EB-4701-A708-6C09C7D9071E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {088A4277-3326-4A06-A132-6AB486A9A22B}
+		SolutionGuid = {20E19703-B6F7-4880-AFB7-18DAAD1E9312}
 	EndGlobalSection
 EndGlobal
