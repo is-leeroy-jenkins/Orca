@@ -7,9 +7,6 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
-
-        app.MapGet("/", () => "index.html");
-
-        app.Run();
+        app.Run(@"C:\Users\terry\source\repos\BudgetWeb\index.html");
     }
 }

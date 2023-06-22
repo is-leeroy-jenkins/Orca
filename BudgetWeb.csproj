@@ -12,6 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="img\BudExNinjaGrey.ico" />
   </ItemGroup>
 
