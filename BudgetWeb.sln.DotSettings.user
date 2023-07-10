@@ -1,7 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:Boolean x:Key="/Default/RunConfigs/Config/=9AAF5D7863C45B4D89A0D36E653F8108/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/RunConfigs/Config/=9AAF5D7863C45B4D89A0D36E653F8108/Type/@EntryValue">project</s:String>
-	<s:String x:Key="/Default/RunConfigs/Config/=9AAF5D7863C45B4D89A0D36E653F8108/Name/@EntryValue">BudgetWeb</s:String>
-	<s:String x:Key="/Default/RunConfigs/Config/=9AAF5D7863C45B4D89A0D36E653F8108/ProjectGuid/@EntryValue">26700AD8EBB40147A7086C09C7D9071E</s:String>
-	<s:String x:Key="/Default/RunConfigs/Config/=9AAF5D7863C45B4D89A0D36E653F8108/DefaultAction/@EntryValue">run</s:String>
-	<s:String x:Key="/Default/RunConfigs/Active/@EntryValue">9AAF5D7863C45B4D89A0D36E653F8108</s:String></wpf:ResourceDictionary>
