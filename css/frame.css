@@ -89,13 +89,13 @@ video
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    border: 1px solid #0078d4;
+    border: 1px solid #0078D4;
     user-select: none;
 }
 
 h2
 {
-    color: #D6D2D2;
+    color: #FFF;
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: bold;
@@ -105,7 +105,7 @@ h2
 
 h3
 {
-    color: #D6D2D2;
+    color: #FFF;
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: bold;
@@ -1117,7 +1117,7 @@ ol.nested > li:before
 
 .custom-survey p.custom-answer-survey
 {
-    background-color:  #343333;
+    background-color: #6F6969;
     border: 1px solid  #0078d4;
     border-radius: 0;
     box-sizing: border-box;
@@ -1142,8 +1142,8 @@ ol.nested > li:before
 .custom-survey input.custom-textbox-survey,
 .custom-survey textarea.custom-textbox-survey
 {
-    background-color:  #343333;
-    border: 1px solid  #0078d4;;
+    background-color: #6F6969;
+    border: 1px solid  #0078d4;
     border-radius: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -1162,7 +1162,7 @@ ol.nested > li:before
 .custom-survey input[ readonly ].custom-textbox-survey,
 .custom-survey textarea[ readonly ].custom-textbox-survey
 {
-    background-color: #343333;
+    background-color: #6F6969;
     cursor: default;
 }
 
@@ -1206,9 +1206,10 @@ ol.nested > li:before
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    background-color:  #343333;
+    background-color: #6F6969;
+    border: 1px solid  #0078d4;
     border: 0;
-    color: #e1e1e1;
+    color: #FFF;
     cursor: pointer;
     display: grid;
     font-family: 'Roboto';
@@ -1236,11 +1237,11 @@ ol.nested > li:before
     -webkit-user-select: none;
     align-content: stretch;
     align-items: stretch;
-    background-color:#343333;
+    background-color: #6F6969;
     border: 0;
     box-sizing: border-box;
     break-inside: avoid;
-    color: #e1e1e1;
+    color: #FFF;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -1277,7 +1278,7 @@ ol.nested > li:before
     background-color: transparent;
     bottom: max( min( 2vw, 10px ), 5px );
     box-sizing: border-box;
-    color: #e1e1e1;
+    color: #FFF;
     display: block;
     font-family: 'Roboto';
     font-size: 25px;
@@ -1306,9 +1307,9 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ] + label > figure > div,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label > figure > div
 {
-    background-color: #343333;
+    background-color: #6F6969;
     box-sizing: border-box;
-    color: #e3e3e3;
+    color: #FFF;
     display: block;
     font-family: 'Roboto';
     font-size: 14px;
@@ -1334,8 +1335,9 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ]:not( :disabled ):hover,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:not( :disabled ):hover
 {
-    background-color:#343333;
-    color: #e3e3e3;
+    background-color: #6F6969;
+    border: 1px solid  #0078d4;
+    color: #FFF;
 }
 
 .custom-survey .custom-radio-group-survey input[ type = "radio" ]:disabled,
@@ -1352,7 +1354,7 @@ ol.nested > li:before
     -ms-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    background-color:#343333;
+    background-color: #6F6969;
     border: 0;
     border-spacing: 0;
     box-shadow: none;
@@ -1372,15 +1374,15 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "radio" ]:checked + label,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ]:checked + label
 {
-    background-color: #4287f5;
+    background-color: #0078d4;
     color: #fff;
 }
 
 .custom-survey .custom-radio-group-survey input[ type = "radio" ] + label:before,
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:before
 {
-    background:#343333;
-    border: 1px solid #4287f5;
+    background: #6F6969;
+    border: 1px solid #0078d4;
     content: '';
     height: 20px;
     left: 14px;
@@ -1404,6 +1406,7 @@ ol.nested > li:before
 .custom-survey .custom-radio-group-survey input[ type = "checkbox" ] + label:after
 {
     -webkit-transition: all 0.1s ease;
+    border: 1px solid  #0078d4;
     background: #00bf0a;
     content: '';
     height: 14px;
@@ -1443,8 +1446,8 @@ ol.nested > li:before
 
 .custom-survey
 {
-    background-color:  #343333;
-    border: 1px solid #4287f5;
+    background-color:  #6F6969;
+    border: 1px solid #0078d4;
     border-radius: 0;
     display: flex;
     flex-direction: column;
@@ -1466,63 +1469,63 @@ ol.nested > li:before
 
 .custom-survey .custom-textbox-survey
 {
-    background-color: #5A5454;
-    color: #e1e1e1;
+    background-color:  #6F6969;
+    color: #FFF;
 }
 
 .custom-survey textarea.custom-textbox-survey::-webkit-input-placeholder
 {
     /* Edge */
-    color:  #343333;
+    color: #6F6969;
 }
 
 .custom-survey textarea.custom-textbox-survey:-ms-input-placeholder
 {
     /* Internet Explorer */
-    color:   #343333;
+    color: #6F6969;
 }
 
 .custom-survey textarea.custom-textbox-survey::placeholder
 {
-    color:   #343333;
+    color: #6F6969;
 }
 
 .custom-survey.answer-mode
 {
-    background-color:  #343333;
-    border: 1px solid #4287f5;
+    background-color: #6F6969;
+    border: 1px solid #0078d4;
 }
 
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ] + label,
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ] + label
 {
-    border: 3px solid #4287f5;
+    border: 3px solid #0078d4;
 }
 
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ]:not( .highlight ) + label,
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ]:not( .highlight ):checked + label
 {
-    background-color:  #343333;
+    background-color: #6F6969;
     color: #e1e1e1;
 }
 
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "radio" ].highlight + label,
 .custom-survey.answer-mode .custom-radio-group-survey input[ type = "checkbox" ].highlight + label
 {
-    background-color: #343333;
+    background-color: #6F6969;
     box-shadow: 0 0 0 5px white inset;
     color: #fff;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey
 {
-    color:  #343333;
+    color:  #6F6969;
     background: #e1e1e1;
 }
 
 .custom-survey.answer-mode .custom-textbox-survey:disabled
 {
-    background:  #343333;
+    background: #6F6969;
 }
 
 .no-top-margin
