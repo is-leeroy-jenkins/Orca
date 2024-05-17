@@ -1,5 +1,4 @@
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
-# Web Pages for the Budget Execution tool
 
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
