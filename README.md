@@ -1,4 +1,4 @@
-![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
+## ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
 
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
