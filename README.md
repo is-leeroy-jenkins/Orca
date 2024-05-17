@@ -38,35 +38,30 @@ This template is tested and worked on:
   - 
 ## Screenshots
 
-### Datagrids to easily query financial data.
+### Overview
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.PNG)
 
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/Datagrid.PNG)
+### Image Galleries
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Gallery.PNG)
 
-### Excel-like interface over a relational database.
+### Dropdowns
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dropdowns.PNG)
 
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/ExcelUserInterface.PNG)
+### Dialogs
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dialogs.PNG)
 
-### Maps for congressional earmark reporting and pollution site monitoring.
+### Air Quality tracking with iframe
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Iframe.PNG)
 
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/Map.PNG)
+### Masonry
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Masonry.PNG)
 
-### Baby Browser using the [Chromium Embedded Framework](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework)
+### Surveys
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Surveys.PNG)
 
-![](https://github.com/KarmaScripter/Baby/blob/main/Properties/Images/2.png)
+### Tabular data
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Tables.PNG)
 
-### Budget Calculator for quick accounting transactions and budget calculations on the data.
-
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/Calculator.PNG)
-
-### Federal fiscal year utilities compatable with full-time equivalency metrics.
-
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/FiscalYear.PNG)
-
-### Environmental program definitions and statutory authorities bound directly to financial data
-
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/EnvironmentalPrograms.PNG)
-
-### Data Visualization
-
-![](https://github.com/KarmaScripter/BudgetExecution/blob/main/Resources/Assets/GitHubImages/Charts.PNG)
+### Video
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Video.PNG)
 
