@@ -44,7 +44,7 @@ This template is tested and worked on:
 ### Galleries
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Gallery.PNG)
 
-### Dropdowns
+### Dropdowns & Radio Buttons
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dropdowns.PNG)
 
 ### Dialogs
