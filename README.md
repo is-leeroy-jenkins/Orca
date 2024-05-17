@@ -38,10 +38,10 @@ This template is tested and worked on:
   - 
 ## Screenshots
 
-### Overview
+### Landing
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.PNG)
 
-### Image Galleries
+### Galleries
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Gallery.PNG)
 
 ### Dropdowns
@@ -50,7 +50,7 @@ This template is tested and worked on:
 ### Dialogs
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dialogs.PNG)
 
-### Air Quality tracking with iframe
+### iFrame - Air Quality tracking
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Iframe.PNG)
 
 ### Masonry
@@ -59,9 +59,9 @@ This template is tested and worked on:
 ### Surveys
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Surveys.PNG)
 
-### Tabular data
+### Tables
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Tables.PNG)
 
-### Video
+### Videos
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Video.PNG)
 
