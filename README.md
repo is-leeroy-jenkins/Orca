@@ -8,7 +8,7 @@
 - js/menu.js (JavaScript for loading the menu bar)
 - js/footer.js (JavaScript for loading the footer)
 
-Uses jQuery to load the menu bar and the footer, as shown below:
+### Uses jQuery to load the menu bar and the footer, as shown below:
 ```html
 <script src="js/menu.js"></script>
 <script src="js/footer.js"></script>
