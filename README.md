@@ -22,7 +22,7 @@ The `footer.js` script loads `footer.html` to `footer-container`.
 <div class="footer-container"></div>
 ```
 
-This template is tested and worked on:
+### This template is tested and worked on:
 - macOS 12.4
   - Chrome 103
   - Safari 15.5
