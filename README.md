@@ -1,4 +1,4 @@
-## ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
+﻿## ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
 
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
@@ -37,30 +37,30 @@ This template is tested and worked on:
  
   - 
 
-## Landing
+# Landing
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.PNG)
 
-## Galleries
+# Galleries
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Gallery.PNG)
 
-## Dropdowns & Radio Buttons
+# Dropdowns & Radio Buttons
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dropdowns.PNG)
 
-## Dialogs
+# Dialogs
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dialogs.PNG)
 
-## iFrame - Air Quality tracking
+# iFrame - Air Quality tracking
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Iframe.PNG)
 
-## Masonry
+# Masonry
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Masonry.PNG)
 
-## Surveys
+# Surveys
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Surveys.PNG)
 
-## Tables
+# Tables
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Tables.PNG)
 
-## Videos
+# Videos
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Video.PNG)
 
