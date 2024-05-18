@@ -64,8 +64,8 @@ dkms.conf
 *.db
 *.accdb
 .vs
-.editorconfig
-.DotSettings
-.idea
+*.editorconfig
+*.DotSettings
+*.idea
 
 
