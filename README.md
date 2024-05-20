@@ -43,3 +43,29 @@ The `footer.js` script loads `footer.html` to `footer-container`.
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.gif)
 
 
+# Landing
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.PNG)
+
+# Galleries
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Gallery.PNG)
+
+# Dropdowns & Radio Buttons
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dropdowns.PNG)
+
+# Dialogs
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Dialogs.PNG)
+
+# iFrame - Air Quality tracking
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Iframe.PNG)
+
+# Masonry
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Masonry.PNG)
+
+# Surveys
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Surveys.PNG)
+
+# Tables
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Tables.PNG)
+
+# Videos
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Video.PNG)
