@@ -39,6 +39,10 @@ The `footer.js` script loads `footer.html` to `footer-container`.
  
   - 
 
+# Quick Overview
+![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.gif)
+
+
 # Landing
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Overview.PNG)
 
