@@ -1,17 +1,17 @@
 ﻿/**************************************************************************************************
 *     File Name:               widgets.js
-*     Assembly:                Budget Execution
+*     Assembly:                Orca
 *     Author:                  Terry D. Eppler
 *     Created:                 03-24-2023
-* 
+*
 *     Last Modified By:        Terry D. Eppler
-*     Last Modified On:        05-31-2023
+*     Last Modified On:        05-31-2024
 *
 * <copyright file="widgets.js" company="Terry Eppler">
-*    This is a Federal Budget, Finance, and Accounting application for the
-*    US Environmental Protection Agency (US EPA).
-*    Copyright ©  2023  Terry Eppler
-* 
+*    Orca is a quick and dirty HTML, CSS, and JS website template used in a
+*    Budget Execution & Data Analysis application for EPA analysts
+*    Copyright ©  2024  Terry Eppler
+*
 *    Permission is hereby granted, free of charge, to any person obtaining a copy
 *    of this software and associated documentation files (the “Software”),
 *    to deal in the Software without restriction,
@@ -20,10 +20,10 @@
 *    and/or sell copies of the Software,
 *    and to permit persons to whom the Software is furnished to do so,
 *    subject to the following conditions:
-* 
+*
 *    The above copyright notice and this permission notice shall be included in all
 *    copies or substantial portions of the Software.
-* 
+*
 *    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
 *    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 *    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
@@ -31,7 +31,7 @@
 *    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 *    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 *    DEALINGS IN THE SOFTWARE.
-* 
+*
 *    You can contact me at: terryeppler@gmail.com or eppler.terry@epa.gov
 * </copyright>
 * <summary>
@@ -40,7 +40,7 @@
 **************************************************************************************************/
 ( function( )
 {
-    "use strict";
+    'use strict';
     const Widgets = function( )
     {
         /**
@@ -52,17 +52,17 @@
          */
         function safeGet( v, defaultVal )
         {
-            if( typeof defaultVal === "undefined" )
+            if( typeof defaultVal === 'undefined' )
             {
-                defaultVal = "";
+                defaultVal = '';
             }
-            return ( typeof v === "undefined" )
+            return ( typeof v === 'undefined' )
                 ? defaultVal
                 : v;
         }
-
+        
         this.safeGet = safeGet;
-
+        
         /**
        * @public
        * @todo need documentation
@@ -71,42 +71,42 @@
         {
             settings = safeGet( settings, { } );
             // Specify the selector of the tab
-            var $selector = $( settings[ "selector" ] );
+            var $selector = $( settings[ 'selector' ] );
             if( $selector.length == 0 )
             {
-                console.error( `Cannot find selector: ${ settings[ "selector" ] }` );
+                console.error( `Cannot find selector: ${ settings[ 'selector' ] }` );
                 return false;
             }
             if( $selector.length > 1 )
             {
                 console.error(
-                    "Multiple selectors were found. Please indicate only one at a time." );
+                    'Multiple selectors were found. Please indicate only one at a time.' );
                 return false;
             }
             // Get the menu items
-            var $menu_items = $selector.find( ".custom-tab-menu-item" );
-            var $all_contents = $selector.find( ".custom-tab-content" );
+            var $menu_items = $selector.find( '.custom-tab-menu-item' );
+            var $all_contents = $selector.find( '.custom-tab-content' );
             $menu_items.each( function( i, element )
             {
                 var $element = $( element );
-                const idx_content = $element.data( "content" );
+                const idx_content = $element.data( 'content' );
                 var $desired_content =
                     $selector.find( `.custom-tab-content[data-content=${ idx_content }]` );
                 // Add click event
-                $element.on( "click",
+                $element.on( 'click',
                     function( )
                     {
                         $all_contents.hide( );
-                        $desired_content.css( "display", "flex" );
-                        $menu_items.removeClass( "active" );
-                        $element.addClass( "active" );
+                        $desired_content.css( 'display', 'flex' );
+                        $menu_items.removeClass( 'active' );
+                        $element.addClass( 'active' );
                     } );
             } );
-            $selector.find( ".custom-tab-menu-item.active" ).click( );
+            $selector.find( '.custom-tab-menu-item.active' ).click( );
         }
-
+        
         this.createCustomTab = createCustomTab;
-
+        
         /**
        * @public
        * @todo need documentation
@@ -116,87 +116,87 @@
             settings = safeGet( settings, { } );
             // Create a button for taking actions (e.g., confirm that users get the message)
             // The default text for the button is "Confirm"
-            var has_action_callback = ( typeof settings[ "action_callback" ] === "function" );
-            var action_text = safeGet( settings[ "action_text" ], "Confirm" );
+            var has_action_callback = ( typeof settings[ 'action_callback' ] === 'function' );
+            var action_text = safeGet( settings[ 'action_text' ], 'Confirm' );
             // Create a button for cancellation
             // The default text for the button is "Cancel" when there is an action button
             // The default text for the button is "Ok" when there is no action button
-            var has_cancel_callback = ( typeof settings[ "cancel_callback" ] === "function" );
+            var has_cancel_callback = ( typeof settings[ 'cancel_callback' ] === 'function' );
             var cancel_text = has_action_callback
-                ? "Cancel"
-                : "Ok";
-            cancel_text = safeGet( settings[ "cancel_text" ], cancel_text );
+                ? 'Cancel'
+                : 'Ok';
+            cancel_text = safeGet( settings[ 'cancel_text' ], cancel_text );
             // Hide the cancel button or not
-            var show_cancel_btn = safeGet( settings[ "show_cancel_btn" ], true );
+            var show_cancel_btn = safeGet( settings[ 'show_cancel_btn' ], true );
             // Specify the style
-            var style_class = `custom-dialog-flat ${ safeGet( settings[ "class" ], "" ) }`;
+            var style_class = `custom-dialog-flat ${ safeGet( settings[ 'class' ], '' ) }`;
             // Specify the selector of the dialog
             // If no selector, a <div></div> will be created
-            var $selector = $( safeGet( settings[ "selector" ], "<div></div>" ) );
+            var $selector = $( safeGet( settings[ 'selector' ], '<div></div>' ) );
             // Specify the width of the dialog
-            var width = safeGet( settings[ "width" ], 260 );
+            var width = safeGet( settings[ 'width' ], 260 );
             // Specify if full width buttons
-            var full_width_button = safeGet( settings[ "full_width_button" ], false );
+            var full_width_button = safeGet( settings[ 'full_width_button' ], false );
             // Show the close button or not
-            var show_close_button = safeGet( settings[ "show_close_button" ], true );
+            var show_close_button = safeGet( settings[ 'show_close_button' ], true );
             // Close the dialog when the action button is clicked or not
-            var close_dialog_on_action = safeGet( settings[ "close_dialog_on_action" ], true );
+            var close_dialog_on_action = safeGet( settings[ 'close_dialog_on_action' ], true );
             // Close the dialog when the cancel button is clicked or not
-            var close_dialog_on_cancel = safeGet( settings[ "close_dialog_on_cancel" ], true );
+            var close_dialog_on_cancel = safeGet( settings[ 'close_dialog_on_cancel' ], true );
             // Reverse the positions of the action and cancel buttons
-            var reverse_button_positions = safeGet( settings[ "reverse_button_positions" ], false );
+            var reverse_button_positions = safeGet( settings[ 'reverse_button_positions' ], false );
             // Specify buttons
             var buttons = [ ];
             if( show_cancel_btn )
             {
-                var btn_class = "ui-cancel-button";
+                var btn_class = 'ui-cancel-button';
                 if( full_width_button )
                 {
-                    btn_class += " full-width";
+                    btn_class += ' full-width';
                 }
                 else
                 {
-                    btn_class += " stretch-on-mobile";
+                    btn_class += ' stretch-on-mobile';
                 }
                 buttons.push( {
-                    class: btn_class,
-                    text: cancel_text,
-                    click: function( event )
+                    class : btn_class,
+                    text : cancel_text,
+                    click : function( event )
                     {
                         if( close_dialog_on_cancel )
                         {
-                            $( this ).dialog( "close" );
+                            $( this ).dialog( 'close' );
                         }
                         if( has_cancel_callback )
                         {
-                            settings[ "cancel_callback" ]( event );
+                            settings[ 'cancel_callback' ]( event );
                         }
                     }
                 } );
             }
             if( has_action_callback )
             {
-                var btn_class = "ui-action-button";
+                var btn_class = 'ui-action-button';
                 if( full_width_button )
                 {
-                    btn_class += " full-width";
+                    btn_class += ' full-width';
                 }
                 else
                 {
-                    btn_class += " stretch-on-mobile";
+                    btn_class += ' stretch-on-mobile';
                 }
                 buttons.push( {
-                    class: btn_class,
-                    text: action_text,
-                    click: function( event )
+                    class : btn_class,
+                    text : action_text,
+                    click : function( event )
                     {
                         if( close_dialog_on_action )
                         {
-                            $( this ).dialog( "close" );
+                            $( this ).dialog( 'close' );
                         }
                         if( has_action_callback )
                         {
-                            settings[ "action_callback" ]( event );
+                            settings[ 'action_callback' ]( event );
                         }
                     }
                 } );
@@ -211,25 +211,25 @@
             // Create dialog
             var $selector_container;
             var dialog_settings = {
-                autoOpen: false,
-                resizable: false,
-                height: "auto",
-                draggable: false,
-                width: width,
-                modal: true,
-                classes: {
-                    "ui-dialog": style_class
+                autoOpen : false,
+                resizable : false,
+                height : 'auto',
+                draggable : false,
+                width : width,
+                modal : true,
+                classes : {
+                    "ui-dialog" : style_class
                 }, // this is for jquery 1.12 and after
-                dialogClass: style_class, // this is for before jquery 1.12
-                buttons: buttons,
-                closeText: "",
-                open: function( event, ui )
+                dialogClass : style_class, // this is for before jquery 1.12
+                buttons : buttons,
+                closeText : '',
+                open : function( event, ui )
                 {
                     var num_opened_dialog = 0;
-                    $( ".ui-dialog-content" )
+                    $( '.ui-dialog-content' )
                         .each( function( )
                         {
-                            if( $( this ).dialog( "isOpen" ) )
+                            if( $( this ).dialog( 'isOpen' ) )
                             {
                                 num_opened_dialog += 1;
                             }
@@ -239,56 +239,56 @@
                     // Check if parent element is specified
                     if( !is_other_dialog_opened )
                     {
-                        if( typeof settings[ "parent" ] === "undefined" )
+                        if( typeof settings[ 'parent' ] === 'undefined' )
                         {
-                            const $body = $( "body" );
-                            if( !$body.hasClass( "no-scroll" ) || !$body.hasClass( "no-x-scroll" ) )
+                            const $body = $( 'body' );
+                            if( !$body.hasClass( 'no-scroll' ) || !$body.hasClass( 'no-x-scroll' ) )
                             {
                                 // When the dialog is open, we want to set the top of the body to the scroll position
-                                document.body.style.top = -window.scrollY + "px";
+                                document.body.style.top = -window.scrollY + 'px';
                                 if( window.innerWidth > document.body.clientWidth )
                                 {
                                     // This means that the page has a vertical scroll bar
-                                    $body.addClass( "no-x-scroll" );
+                                    $body.addClass( 'no-x-scroll' );
                                 }
                                 else
                                 {
                                     // This means that the page has no vertical scroll bar
-                                    $body.addClass( "no-scroll" );
+                                    $body.addClass( 'no-scroll' );
                                 }
                             }
                             $selector_container.css( {
-                                position: "fixed",
-                                top: `calc(50% - ${ $selector_container.height( ) / 2 }px)`,
-                                margin: "0 auto",
-                                left: "0",
-                                right: "0",
-                                overflow: "hidden"
+                                position : 'fixed',
+                                top : `calc(50% - ${ $selector_container.height( ) / 2 }px)`,
+                                margin : '0 auto',
+                                left : '0',
+                                right : '0',
+                                overflow : 'hidden'
                             } );
                         }
                         else
                         {
                             // If there is a parent, need to fit the overlay to the parent element
-                            const $overlay = $( ".ui-widget-overlay" );
-                            if( !$overlay.hasClass( "fit-parent" ) )
+                            const $overlay = $( '.ui-widget-overlay' );
+                            if( !$overlay.hasClass( 'fit-parent' ) )
                             {
-                                $overlay.addClass( "fit-parent" );
+                                $overlay.addClass( 'fit-parent' );
                             }
                             $selector_container.css( {
-                                margin: "0 auto",
-                                left: "0",
-                                right: "0"
+                                margin : '0 auto',
+                                left : '0',
+                                right : '0'
                             } );
                         }
                     }
                 },
-                close: function( event, ui )
+                close : function( event, ui )
                 {
                     var num_opened_dialog = 0;
-                    $( ".ui-dialog-content" )
+                    $( '.ui-dialog-content' )
                         .each( function( )
                         {
-                            if( $( this ).dialog( "isOpen" ) )
+                            if( $( this ).dialog( 'isOpen' ) )
                             {
                                 num_opened_dialog += 1;
                             }
@@ -298,93 +298,93 @@
                     if( !is_other_dialog_opened )
                     {
                         // Check if parent element is specified
-                        if( typeof settings[ "parent" ] === "undefined" )
+                        if( typeof settings[ 'parent' ] === 'undefined' )
                         {
-                            const $body = $( "body" );
-                            if( $body.hasClass( "no-scroll" ) || $body.hasClass( "no-x-scroll" ) )
+                            const $body = $( 'body' );
+                            if( $body.hasClass( 'no-scroll' ) || $body.hasClass( 'no-x-scroll' ) )
                             {
-                                if( $body.hasClass( "no-scroll" ) )
+                                if( $body.hasClass( 'no-scroll' ) )
                                 {
-                                    $body.removeClass( "no-scroll" );
+                                    $body.removeClass( 'no-scroll' );
                                 }
-                                if( $body.hasClass( "no-x-scroll" ) )
+                                if( $body.hasClass( 'no-x-scroll' ) )
                                 {
-                                    $body.removeClass( "no-x-scroll" );
+                                    $body.removeClass( 'no-x-scroll' );
                                 }
                                 // When the dialog is hidden, we want to remain at the top of the scroll position
                                 const scrollY = document.body.style.top;
-                                document.body.style.top = "";
-                                window.scrollTo( 0, parseInt( scrollY || "0" ) * -1 );
+                                document.body.style.top = '';
+                                window.scrollTo( 0, parseInt( scrollY || '0' ) * -1 );
                             }
                         }
                         else
                         {
                             // If there is a parent, need to remove the class that fits the overlay to the parent
-                            const $overlay = $( ".ui-widget-overlay" );
-                            if( $overlay.hasClass( "fit-parent" ) )
+                            const $overlay = $( '.ui-widget-overlay' );
+                            if( $overlay.hasClass( 'fit-parent' ) )
                             {
-                                $overlay.removeClass( "fit-parent" );
+                                $overlay.removeClass( 'fit-parent' );
                             }
                         }
                     }
                 }
             };
-            if( typeof settings[ "parent" ] === "undefined" )
+            if( typeof settings[ 'parent' ] === 'undefined' )
             {
-                dialog_settings[ "position" ] = {
-                    my: "center",
-                    at: "center",
-                    of: window
+                dialog_settings[ 'position' ] = {
+                    my : 'center',
+                    at : 'center',
+                    of : window
                 };
             }
             else
             {
-                dialog_settings[ "appendTo" ] = settings[ "parent" ];
-                dialog_settings[ "position" ] = {
-                    my: "center",
-                    at: "center",
-                    of: settings[ "parent" ]
+                dialog_settings[ 'appendTo' ] = settings[ 'parent' ];
+                dialog_settings[ 'position' ] = {
+                    my : 'center',
+                    at : 'center',
+                    of : settings[ 'parent' ]
                 };
             }
             var $dialog = $selector.dialog( dialog_settings );
-            $selector_container = $selector.closest( ".ui-dialog" );
-            $selector_container.find( ".ui-dialog-titlebar-close" ).empty( )
+            $selector_container = $selector.closest( '.ui-dialog' );
+            $selector_container.find( '.ui-dialog-titlebar-close' ).empty( )
                 .append( "<i class='fa fa-times fa-lg'></i>" );
             if( !show_close_button )
             {
-                $dialog.on( "dialogopen",
+                $dialog.on( 'dialogopen',
                     function( )
                     {
-                        $( this ).parent( ).find( ".ui-dialog-titlebar-close" ).hide( );
+                        $( this ).parent( ).find( '.ui-dialog-titlebar-close' ).hide( );
                     } );
             }
             return $dialog;
         }
-
+        
         this.createCustomDialog = createCustomDialog;
-
+        
         /**
        * @public
        * @todo need documentation
        */
         function setCustomDropdown( $ui, settings )
         {
-            const items = settings[ "items" ]; // the text that will appear for each item
-            const init_index = settings[ "init_index" ];
-            const init_text = settings[ "init_text" ];
-            var on_item_click_callback = settings[ "on_item_click_callback" ];
-            const on_item_create_callback = settings[ "on_item_create_callback" ];
-            var $menu = $ui.find( "div" ).empty( );
-            var $button_text = $ui.find( "a > span" ).text( "" );
+            const items = settings[ 'items' ]; // the text that will appear for each item
+            const init_index = settings[ 'init_index' ];
+            const init_text = settings[ 'init_text' ];
+            var on_item_click_callback = settings[ 'on_item_click_callback' ];
+            const on_item_create_callback = settings[ 'on_item_create_callback' ];
+            var $menu = $ui.find( 'div' ).empty( );
+            var $button_text = $ui.find( 'a > span' ).text( '' );
             var $selected_item;
             // Set initial button text
-            if( typeof init_text !== "undefined" )
+            if( typeof init_text !== 'undefined' )
             {
                 $button_text.text( init_text );
             }
             else
             {
-                if( typeof init_index !== "undefined" && typeof items !== "undefined" )
+                if( typeof init_index !== 'undefined' && typeof items !== 'undefined' )
                 {
                     $button_text.text( items[ init_index ] );
                 }
@@ -393,34 +393,34 @@
             // Note that the button is designed to use focusout and focus to determine its state
             // "focusout" indicates that the menu is currently opened and should be closed
             // "focus" indicates that the menu is currently closed and should be opened
-            $ui.find( "a" )
-                .off( "focusout" )
-                .on( "focusout",
+            $ui.find( 'a' )
+                .off( 'focusout' )
+                .on( 'focusout',
                     function( )
                     {
                         // Find which item is hovered, and then simulate the click
-                        if( typeof $selected_item !== "undefined" )
+                        if( typeof $selected_item !== 'undefined' )
                         {
                             $button_text.text(
                                 $selected_item.text( ) ); // update the text on the button
-                            if( typeof on_item_click_callback === "function" )
+                            if( typeof on_item_click_callback === 'function' )
                             {
                                 on_item_click_callback( $selected_item, $selected_item.index( ) );
                             }
                             $selected_item = undefined;
                         }
-                        if( $menu.is( ":visible" ) )
+                        if( $menu.is( ':visible' ) )
                         {
-                            $menu.addClass( "force-hide" );
+                            $menu.addClass( 'force-hide' );
                         } // close the menu
                     } )
-                .off( "focus" )
-                .on( "focus",
+                .off( 'focus' )
+                .on( 'focus',
                     function( )
                     {
-                        if( !$menu.is( ":visible" ) )
+                        if( !$menu.is( ':visible' ) )
                         {
-                            $menu.removeClass( "force-hide" );
+                            $menu.removeClass( 'force-hide' );
                         } // open the menu
                     } );
             // Add events for menu items
@@ -432,27 +432,27 @@
                 // because as soon as the item is clicked,
                 // the focusout event of the button is triggered,
                 // this closes the menu and we never get the click event from the items
-                $item.on( "mouseover",
+                $item.on( 'mouseover',
                         function( )
                         {
                             $selected_item = $( this );
                         } )
-                    .on( "mouseout",
+                    .on( 'mouseout',
                         function( )
                         {
                             $selected_item = undefined;
                         } );
                 $menu.append( $item );
-                if( typeof on_item_create_callback === "function" )
+                if( typeof on_item_create_callback === 'function' )
                 {
                     on_item_create_callback( $item, i );
                 }
             }
             return $ui;
         }
-
+        
         this.setCustomDropdown = setCustomDropdown;
-
+        
         /**
        * @public
        * @todo need documentation
@@ -461,14 +461,14 @@
         {
             settings = safeGet( settings, { } );
             $ui.accordion( {
-                collapsible: true,
-                animate: safeGet( settings[ "animate" ], false )
+                collapsible : true,
+                animate : safeGet( settings[ 'animate' ], false )
             } );
             return $ui;
         }
-
+        
         this.setCustomLegend = setCustomLegend;
-
+        
         /**
        * Copy text in a input field
        * @public
@@ -484,9 +484,9 @@
             // Copy the text inside the text field
             navigator.clipboard.writeText( c.value );
         }
-
+        
         this.copyText = copyText;
-
+        
         /**
        * Resize a jQuery dialog to fit the screen.
        * @public
@@ -497,17 +497,17 @@
             const $window = $( window );
             $dialog.parent( )
                 .css( {
-                    "width": $window.width( ),
-                    "height": $window.height( ),
-                    "left": 0,
-                    "top": 0
+                    "width" : $window.width( ),
+                    "height" : $window.height( ),
+                    "left" : 0,
+                    "top" : 0
                 } );
-            $dialog.dialog( "option", "height", $window.height( ) );
-            $dialog.dialog( "option", "width", $window.width( ) );
+            $dialog.dialog( 'option', 'height', $window.height( ) );
+            $dialog.dialog( 'option', 'width', $window.width( ) );
         }
-
+        
         this.fitDialogToScreen = fitDialogToScreen;
-
+        
         /**
        * Create the html elements for a photo from Unsplash.
        * @private
@@ -521,8 +521,8 @@
                 `<figure style="display: none;"><img src="${ imageUrl }"><div>${ credit
                     }</div></figure>`;
             const $html = $( html );
-            $html.find( "img" )
-                .one( "load",
+            $html.find( 'img' )
+                .one( 'load',
                     function( )
                     {
                         // Only show the figure when the image is loaded
@@ -530,7 +530,7 @@
                     } );
             return $html;
         }
-
+        
         /**
        * Create and display the image picker dialog (customized for Unsplash API).
        * @public
@@ -543,13 +543,13 @@
         function createUnsplashPhotoPickerDialog( uniqueId, dialogData, photoURL, onselect )
         {
             // Create HTML
-            var html = "";
+            var html = '';
             html += `<div id="${ uniqueId
                 }" title="Photo Picker" data-role="none" style="display: none;">`;
             html += '  <p class="text dialog-photo-picker-text">';
             html +=
                 '    Search photos using <a href="https://unsplash.com/" target="_blank">Unsplash</a> and pick one:';
-            html += "  </p>";
+            html += '  </p>';
             html += '  <form class="search-box-container">';
             html += '  <input class="custom-textbox search-box" placeholder="Enter search terms">';
             html += '    <button title="Search photos" type="submit" class="search-box-button">';
@@ -557,105 +557,105 @@
                 '      <svg width="32" height="32" class="search-box-icon" version="1.1" viewBox="0 0 32 32" aria-hidden="false">';
             html +=
                 '        <path d="M22 20c1.2-1.6 2-3.7 2-6 0-5.5-4.5-10-10-10S4 8.5 4 14s4.5 10 10 10c2.3 0 4.3-.7 6-2l6.1 6 1.9-2-6-6zm-8 1.3c-4 0-7.3-3.3-7.3-7.3S10 6.7 14 6.7s7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z"></path>';
-            html += "      </svg>";
-            html += "    </button>";
-            html += "  </form>";
+            html += '      </svg>';
+            html += '    </button>';
+            html += '  </form>';
             html +=
                 '  <p class="text custom-text-danger photos-masonry-error-message">No images found. Please search again using other terms.</p>';
             html += '  <div class="masonry"></div>';
-            html += "</div>";
+            html += '</div>';
             var $html = $( html );
             $( document.body ).append( $html );
             // Create dialog
             var $imagePickerDialog = createCustomDialog( {
-                "selector": `#${ uniqueId }`,
-                "action_text": "Select",
-                "width": 290,
-                "class": "dialog-photo-picker",
-                "show_cancel_btn": false,
-                "action_callback": function( )
+                "selector" : `#${ uniqueId }`,
+                "action_text" : 'Select',
+                "width" : 290,
+                "class" : 'dialog-photo-picker',
+                "show_cancel_btn" : false,
+                "action_callback" : function( )
                 {
-                    const d = $( $html.find( ".masonry" ).find( ".selected" )[ 0 ] ).data( "raw" );
-                    if( typeof onselect == "function" )
+                    const d = $( $html.find( '.masonry' ).find( '.selected' )[ 0 ] ).data( 'raw' );
+                    if( typeof onselect == 'function' )
                     {
                         onselect( d, $imagePickerDialog );
                     }
                 }
             } );
-            $imagePickerDialog.dialog( "widget" ).find( "button.ui-action-button" )
-                .prop( "disabled", true );
-            $imagePickerDialog.data( "raw", dialogData );
+            $imagePickerDialog.dialog( 'widget' ).find( 'button.ui-action-button' )
+                .prop( 'disabled', true );
+            $imagePickerDialog.data( 'raw', dialogData );
             // Handle photo search
-            $html.find( ".search-box-container" )
-                .on( "submit",
+            $html.find( '.search-box-container' )
+                .on( 'submit',
                     function( event )
                     {
                         event.preventDefault( );
-                        const search = $html.find( ".search-box" ).blur( ).val( );
-                        if( search == "" )
+                        const search = $html.find( '.search-box' ).blur( ).val( );
+                        if( search == '' )
                         {
-                            console.log( "no search term" );
+                            console.log( 'no search term' );
                         }
                         else
                         {
                             let targetPhotoURL;
-                            if( typeof photoURL === "undefined" )
+                            if( typeof photoURL === 'undefined' )
                             {
-                                targetPhotoURL = "file/photo.json";
+                                targetPhotoURL = 'file/photo.json';
                             }
                             else
                             {
-                                targetPhotoURL = photoURL + "&query=" + search;
+                                targetPhotoURL = photoURL + '&query=' + search;
                             }
                             $.getJSON( targetPhotoURL,
                                     function( data )
                                     {
-                                        $html.find( ".photos-masonry-error-message" ).hide( );
-                                        var $photos = $html.find( ".masonry" ).empty( ).show( );
+                                        $html.find( '.photos-masonry-error-message' ).hide( );
+                                        var $photos = $html.find( '.masonry' ).empty( ).show( );
                                         for( let i = 0; i < data.length; i++ )
                                         {
                                             const d = data[ i ];
-                                            const imageUrl = d[ "urls" ][ "regular" ];
+                                            const imageUrl = d[ 'urls' ][ 'regular' ];
                                             const credit =
-                                                `Credit: <a href="${ d[ "user" ][ "links" ][
-                                                    "html" ] }" target="_blank">${ d[
-                                                    "user" ][
-                                                    "name" ] }</a>`;
+                                                `Credit: <a href="${ d[ 'user' ][ 'links' ][
+                                                    'html' ] }" target="_blank">${ d[
+                                                    'user' ][
+                                                    'name' ] }</a>`;
                                             const $d = createUnsplashPhotoHTML( credit, imageUrl );
-                                            $d.data( "raw", d );
+                                            $d.data( 'raw', d );
                                             $photos.append( $d );
                                         }
-                                        $photos.find( "figure" )
-                                            .on( "click",
+                                        $photos.find( 'figure' )
+                                            .on( 'click',
                                                 function( )
                                                 {
-                                                    if( $( this ).hasClass( "selected" ) )
+                                                    if( $( this ).hasClass( 'selected' ) )
                                                     {
-                                                        $( this ).removeClass( "selected" );
-                                                        $imagePickerDialog.dialog( "widget" )
-                                                            .find( "button.ui-action-button" )
-                                                            .prop( "disabled", true );
+                                                        $( this ).removeClass( 'selected' );
+                                                        $imagePickerDialog.dialog( 'widget' )
+                                                            .find( 'button.ui-action-button' )
+                                                            .prop( 'disabled', true );
                                                     }
                                                     else
                                                     {
-                                                        $photos.find( ".selected" )
-                                                            .removeClass( "selected" );
-                                                        $( this ).addClass( "selected" );
-                                                        $imagePickerDialog.dialog( "widget" )
-                                                            .find( "button.ui-action-button" )
-                                                            .prop( "disabled", false );
+                                                        $photos.find( '.selected' )
+                                                            .removeClass( 'selected' );
+                                                        $( this ).addClass( 'selected' );
+                                                        $imagePickerDialog.dialog( 'widget' )
+                                                            .find( 'button.ui-action-button' )
+                                                            .prop( 'disabled', false );
                                                     }
                                                 } );
                                     } )
                                 .fail( function( )
                                 {
-                                    $html.find( ".masonry" ).empty( ).hide( );
-                                    $html.find( ".photos-masonry-error-message" ).show( );
+                                    $html.find( '.masonry' ).empty( ).hide( );
+                                    $html.find( '.photos-masonry-error-message' ).show( );
                                 } );
                         }
                     } );
             // Focus on the search box
-            $html.find( ".search-box" ).focus( );
+            $html.find( '.search-box' ).focus( );
             // Handle window resize
             $( window )
                 .resize( function( )
@@ -665,7 +665,7 @@
             fitDialogToScreen( $imagePickerDialog );
             return $imagePickerDialog;
         }
-
+        
         this.createUnsplashPhotoPickerDialog = createUnsplashPhotoPickerDialog;
     };
     // Register to window

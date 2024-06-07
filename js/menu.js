@@ -40,9 +40,9 @@
 **************************************************************************************************/
 ( function( )
 {
-    "use strict";
+    'use strict';
     $( function( )
     {
-        $( ".menu-container" ).load( "menu.html" );
+        $( '.menu-container' ).load( 'menu.html' );
     } );
 } )( );
