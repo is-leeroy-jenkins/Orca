@@ -1,7 +1,6 @@
-﻿## A quick and dirty HTML, CSS, and JS website template
-
+##  Orca
 ## ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
-
+﻿## A quick and fast HTML, CSS, and JS website template
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
 - css/widgets.css (CSS for widgets that require JavaScript)
