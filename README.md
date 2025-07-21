@@ -68,3 +68,8 @@ The `footer.js` script loads `footer.html` to `footer-container`.
 
 # Videos
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/etc/github/Video.PNG)
+
+## 📝 License
+
+Orca is published under the [MIT General Public License v3](https://github.com/is-leeroy-jenkins/Orca/blob/main/LICENSE).
+
