@@ -1,6 +1,6 @@
 ######  Orca
 ![](https://github.com/KarmaScripter/BudgetWeb/blob/main/img/BudgetWeb.png)
-﻿#### A website starter kit based on HTML, CSS, and JS
+A rapid-development website starter kit based on HTML, CSS, and JS
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
 - css/widgets.css (CSS for widgets that require JavaScript)
